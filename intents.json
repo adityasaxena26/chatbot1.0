@@ -1,0 +1,42 @@
+{ "intents" : [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Hello", "Is anyone there?", "Good day"],
+         "responses": ["Hi there, how can I help?", "Hello, thanks for visiting", "Good to see you again"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Goodbye", "Bye", "See you later"],
+         "responses": ["Have a nice day", "See you later, thanks for visiting", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thank you", "Thanks", "That's helpful"],
+         "responses": ["No problem", "My pleasure", "Happy to help!", "Any time!"]
+        },
+        {"tag": "hours",
+         "patterns": ["When are you open?", "What hours are you open?", "What are your hours?"],
+         "responses": ["Our hours are 9am-5pm every day", "We're open every day 9am-5pm"]
+        },
+        {"tag": "location",
+         "patterns": ["Where are you located?", "What is your address?", "What is the location of your clinic?" ],
+         "responses": ["Our address is Connaught Place New Delhi", "We are at Connaught Place New Delhi"]
+        },
+        {"tag": "payments",
+         "patterns": ["Are you cash only?", "Do you take credit cards?", "Do you accept Mastercard?", "Do you take payments through mobile wallets" ],
+         "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards", "We also accept mobile wallets payments on GooglePay & Paytm"]
+        },
+        {"tag": "opentoday",
+         "patterns": ["Are you open today?", "When do you open today?", "What are your hours today?"],
+         "responses": ["We're open every day from 9am-5pm", "Our hours are 9am-5pm every day"]
+        },
+        {"tag": "tests",
+         "patterns": ["What are the tests done?", "Which tests are available at the clinic?", "What are services available?"],
+         "responses": ["We have multiple tests available at our clinic.", "We provide diagnostics tests like MRI scan CT scan ECG"],
+         "context_set": "rentalday"
+        },
+        {"tag": "today",
+         "patterns": ["today"],
+         "responses": ["For appointment today please call 011-6580244", "For same-day appointment please call 011-6580244"],
+         "context_filter": "appointment"
+        }
+   ]
+}
