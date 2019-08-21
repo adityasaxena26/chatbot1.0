@@ -31,12 +31,17 @@
         {"tag": "tests",
          "patterns": ["What are the tests done?", "Which tests are available at the clinic?", "What are services available?"],
          "responses": ["We have multiple tests available at our clinic.", "We provide diagnostics tests like MRI scan CT scan ECG"],
-         "context_set": "rentalday"
+         "context_set": "services"
         },
         {"tag": "today",
          "patterns": ["today"],
          "responses": ["For appointment today please call 011-6580244", "For same-day appointment please call 011-6580244"],
          "context_filter": "appointment"
         }
+	{"tag": "departments",
+         "patterns": ["How many clinical services are provided?", "How many specialist doctors in each departmen?"],
+         "responses": ["We have a number of specialist doctors in each departmenet.", "8 different types of clinical services are provided at the clinic."],
+         "context_set": "specialist"
+        },
    ]
 }
